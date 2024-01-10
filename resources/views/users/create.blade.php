@@ -42,14 +42,6 @@
                     <label class="form-label">Pos</label>
                     <input type="text" class="form-control" name="user_pos">
                 </div>
-                <div class="col-md-3">
-                    <label class="form-label">Role</label>
-                    <input type="text" class="form-control" name="user_role">
-                </div>
-                <div class="col-md-3">
-                    <label class="form-label">Status</label>
-                    <input type="text" class="form-control" name="user_aktif">
-                </div>
                 <div class="col-12">
                     <button type="submit" class="btn text-white" style="background-color: #004643">Simpan</button>
                 </div>

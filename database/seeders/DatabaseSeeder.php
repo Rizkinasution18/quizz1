@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             'user_role'     => '1',
             'user_aktif'    => '1',
             'email'         => 'rizki@gmail.com',
-            'password'      => Hash::make('0000'),
+            'password'      => Hash::make('0'000),
         ]);
     }
 }

@@ -88,9 +88,6 @@ class UserController extends Controller
         $data['user_alamat']      = $request->user_alamat;
         $data['user_hp']      = $request->user_hp;
         $data['user_pos']      = $request->user_pos;
-        $data['user_role']      = $request->user_role;
-        $data['user_aktif']      = $request->user_aktif;
-
         User::whereId($id)->update($data);
         return redirect()->route('user');
     }

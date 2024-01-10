@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>QUIZ LARAVEL PBWL | SI1 </title>
+    <title>Rizki Motor </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -19,8 +19,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg fixed-top p-4 shadow p-3 mb-5 bg-body-tertiary rounded">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold" style="color : #0f0e17" href="{{ route('home') }}">Rizki Prasetya<span
-                        style="color : #004643"> Hidayat Nst</span></a>
+                <a class="navbar-brand fw-bold" style="color : #0f0e17" href="{{ route('home') }}">checklist<span
+                        style="color : #004643"> rizki motor</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -33,13 +33,13 @@
                                 href="{{ route('home') }}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="color : #0f0e17" href="{{ route('pelanggan') }}">Pelanggan</a>
+                            <a class="nav-link" style="color : #0f0e17" href="{{ route('pelanggan') }}">Data Barang</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="color : #0f0e17" href="{{ route('user') }}">User</a>
+                            <a class="nav-link" style="color : #0f0e17" href="{{ route('user') }}">Suplier</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="color : #0f0e17" href="{{ route('gol_view') }}">Golongan</a>
+                            <a class="nav-link" style="color : #0f0e17" href="{{ route('gol_view') }}">Kategori Suku Cadang</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" style="color : #0f0e17"href="#" role="button"

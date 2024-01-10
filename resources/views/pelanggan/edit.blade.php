@@ -3,7 +3,7 @@
 @section('content')
     <div class="card m-auto col-10 mt-4 shadow-sm p-3 mb-5 bg-body-tertiary rounded">
         <div class="card-header text-center">
-            <h3 class="card-title">Edit Data Pelanggan</h3>
+            <h3 class="card-title">Edit Data Barang</h3>
         </div>
         <div class="card-body">
             <!-- Formulir untuk mengedit data pelanggan -->
@@ -13,58 +13,20 @@
 
                 <div class="row g-3">
                     <div class="col-md-6">
-                        <label for="golongan_id" class="form-label">Golongan</label>
+                        <label for="golongan_id" class="form-label">Kode</label>
                         <select class="form-select" name="gol_id" required>
                             @foreach ($golongans as $golongan)
                                 <option value="{{ $golongan->id }}"
                                     {{ $data->golongan->id == $golongan->id ? 'selected' : '' }}>
-                                    {{ $golongan->gol_nama }}
+                                    {{ $golongan->gol_kode }}
                                 </option>
                             @endforeach
                         </select>
                     </div>
                     <div class="col-md-6">
-                        <label for="pel_no" class="form-label">No Pelanggan</label>
-                        <input type="text" class="form-control" id="pel_no" name="pel_no" value="{{ $data->pel_no }}"
-                            required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="pel_nama" class="form-label">Nama</label>
+                        <label for="pel_nama" class="form-label">Merek</label>
                         <input type="text" class="form-control" id="pel_nama" name="pel_nama"
                             value="{{ $data->pel_nama }}" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="pel_alamat" class="form-label">Alamat</label>
-                        <input type="text" class="form-control" id="pel_alamat" name="pel_alamat"
-                            value="{{ $data->pel_alamat }}" required>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="pel_hp" class="form-label">No HP</label>
-                        <input type="text" class="form-control" id="pel_hp" name="pel_hp" value="{{ $data->pel_hp }}"
-                            required>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="pel_ktp" class="form-label">KTP</label>
-                        <input type="text" class="form-control" id="pel_ktp" name="pel_ktp"
-                            value="{{ $data->pel_ktp }}" required>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="pel_seri" class="form-label">Seri</label>
-                        <input type="text" class="form-control" id="pel_seri" name="pel_seri"
-                            value="{{ $data->pel_seri }}" required>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="pel_meteran" class="form-label">Meteran</label>
-                        <input type="text" class="form-control" id="pel_meteran" name="pel_meteran"
-                            value="{{ $data->pel_meteran }}" required>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="pel_aktif" class="form-label">Status</label>
-                        <select name="pel_aktif" class="form-select" required>
-                            <option value="Aktif" {{ $data->pel_aktif == 'Aktif' ? 'selected' : '' }}>Aktif</option>
-                            <option value="Non-Aktif" {{ $data->pel_aktif == 'Non-Aktif' ? 'selected' : '' }}>Non Aktif
-                            </option>
-                        </select>
                     </div>
                     <div class="col-md-4">
                         <label for="user_id" class="form-label">User</label>

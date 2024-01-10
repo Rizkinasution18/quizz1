@@ -11,13 +11,10 @@
                 <thead>
                     <tr>
                         <th style="width: 10px">No</th>
-                        <th>Email</th>
                         <th>Nama</th>
                         <th>Alamat</th>
                         <th>No Hp</th>
                         <th>Pos</th>
-                        <th>Role</th>
-                        <th>Aktif</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -26,13 +23,10 @@
                     @foreach ($data as $d)
                         <tr>
                             <td>{{ $no++ }}</td>
-                            <td>{{ $d->email }}</td>
                             <td>{{ $d->name }}</td>
                             <td>{{ $d->user_alamat }}</td>
                             <td>{{ $d->user_hp }}</td>
                             <td>{{ $d->user_pos }}</td>
-                            <td>{{ $d->user_role }}</td>
-                            <td>{{ $d->user_aktif }}</td>
                             <td>
                                 <div class="btn-group gap-2" role="group">
                                     <a href="{{ route('user_edit', ['id' => $d->id]) }}" class="btn btn-info"

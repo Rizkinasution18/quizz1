@@ -2,7 +2,7 @@
 @section('content')
     <div class="card col-12 m-4">
         <div class="card-header text-center">
-            <h3 class="card-title">Data Users</h3>
+            <h3 class="card-title">Kategori Suku Cadang</h3>
         </div>
         <div class="card-body">
             <a href="{{ route('gol_create') }}" class="btn mb-4 text-white" style="background-color: #004643">Tambah Data</a>
@@ -10,8 +10,8 @@
                 <thead>
                     <tr>
                         <th style="width: 10px">No</th>
-                        <th>Kode Golongan</th>
-                        <th>Nama Golongan</th>
+                        <th>Kode</th>
+                        <th>Nama</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>

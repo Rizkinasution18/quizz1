@@ -35,14 +35,7 @@ class PelangganController extends Controller
     {
         $data = $request->validate([
             'gol_id' => 'required',
-            'pel_no' => 'required',
             'pel_nama' => 'required',
-            'pel_alamat' => 'required',
-            'pel_hp' => 'required',
-            'pel_ktp' => 'required',
-            'pel_seri' => 'required',
-            'pel_meteran' => 'required',
-            'pel_aktif' => 'required',
             'user_id' => 'required',
         ]);
 
@@ -83,14 +76,7 @@ class PelangganController extends Controller
     {
         $data = $request->validate([
             'gol_id' => 'required',
-            'pel_no' => 'required',
             'pel_nama' => 'required',
-            'pel_alamat' => 'required',
-            'pel_hp' => 'required',
-            'pel_ktp' => 'required',
-            'pel_seri' => 'required',
-            'pel_meteran' => 'required',
-            'pel_aktif' => 'required',
             'user_id' => 'required',
         ]);
 
